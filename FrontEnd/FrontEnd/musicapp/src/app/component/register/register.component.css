@@ -1,0 +1,98 @@
+.gradient-custom {
+    /* fallback for old browsers */
+    /* background: #93fbad; */
+  background-color: black;
+    /* Chrome 10-25, Safari 5.1-6 */
+    /* background: -webkit-linear-gradient(to bottom right, rgb(155, 9, 9), rgb(8, 142, 19));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background: linear-gradient(to bottom right, rgb(8, 8, 8), rgb(157, 168, 114))  */
+    /*  */
+    /* background: linear-gradient(to bottom right, black) */
+  }
+  
+  .card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+    color:rgb(0, 0, 0);
+  }
+  .card-registration .select-arrow {
+    top: 13px;
+    color:rgb(0, 0, 0);
+  }
+  .form-label{
+    margin-right: px;
+  }
+ form{
+   color: rgb(255, 249, 249);
+ }
+ h3{
+   color: rgb(255, 249, 249);
+ }
+ .avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.form-control1{
+  margin-left: 25px;
+  
+}
+.form-control2{
+  margin-left: 26px;
+  
+}
+.form-control3{
+  margin-left: 2px;
+  
+}
+/* .form-outline
+{
+  text-align: center;
+} */
+.register{
+  padding-bottom: 80px;
+}
+.reg{
+max-width: 700px;
+text-align: left;
+
+margin-left: 200px;
+margin-top: 10px;
+opacity: 0.921;
+
+}
+h1{
+  margin-left: 10px;
+}
+.button{
+margin-left: 50px;
+  max-width: 300px;
+  /* padding-bottom: 10px; */
+}
+.form-outline {
+  text-align: 30px;
+  margin-left: 230px;
+}
+.outline{
+  margin-bottom: 10px;
+}
+
+span{color: red;}
+
+.box{
+  margin-left: 205px;
+}
+.mob{
+  margin-left: 228px;
+}
+.custom-snackbar{
+color: black;
+}
+/* h3{margin-top: } */
+.gen{
+  margin-left: 228px;
+}

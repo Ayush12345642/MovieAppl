@@ -1,0 +1,44 @@
+.sidenav-container {
+    height: 100%;
+     /* background-color:rosybrown;  */
+     background-color:rgb(7, 7, 7); 
+}
+
+.sidenav {
+    width: 200px;
+    
+}
+
+.sidenav .mat-toolbar {
+    background: rgb(0, 0, 0);
+}
+
+.mat-toolbar.mat-primary {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+
+.onSelect:focus{
+    /* background-color:green; */
+    background-color:black;
+
+    color:red;
+}
+
+.is-active {
+    background-color:rgb(10, 10, 10);
+    color:red;
+}
+.color{
+    background-color: rgb(20, 30, 83);
+}

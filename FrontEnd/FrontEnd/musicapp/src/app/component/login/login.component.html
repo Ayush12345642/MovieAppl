@@ -1,0 +1,96 @@
+<mat-card class="example">
+<mat-grid-list cols="1"   >
+    <mat-grid-tile>
+        <div id="Login">
+            <h1>Sign-in</h1>
+            <form [formGroup]="LoginForm" (ngSubmit)="loggedin()">
+                <div class="row">
+                    <h3><div class="form-outline">
+                        <label class="form-label" for="Email">Email :</label> &nbsp; &nbsp;
+                        <input type="text" class="form-control form-control-lg" formControlName="email" />
+                    </div></h3>
+                    <span class="text-danger" *ngIf="getEmail.invalid && getEmail.touched ">Valid Email Required</span>
+                    <span class="text-danger" *ngIf="getEmail.invalid && getEmail.dirty ">Invalid Email</span>
+                </div>
+
+                <br>
+                           <div class="row">
+                              <h3>  <div class="form-outline">
+                                    <label class="form-label" for="Password">Password :</label> &nbsp; 
+                                    <input type="password" formControlName="password"
+                                        class="form-control1 form-control-lg" />
+                                </div></h3> 
+                                <span class="text-danger" *ngIf="getPassword.invalid && getPassword.touched ">Password
+                                    Is Required </span>
+                            </div>
+                            <br>
+                            <br>
+                           
+                            <div class="mt-4 pt-2">
+                                
+                                 <!-- <button>{{ authService.isLoggedIn | async ? 'Logout' : 'Login' }}</button> -->
+                                 <button mat-raised-button color="primary" class="button"
+                                 [disabled]="!LoginForm.valid" (click)="openSnackbar()">Login</button>
+                             </div>
+                            <br>
+                            <div>New to Muzix ?
+                                <a class="register" routerLink="/auth/register">Register Now</a>
+                            </div>
+            </form>
+
+        </div>
+    </mat-grid-tile>
+
+</mat-grid-list>
+</mat-card>
+
+
+<!-- <section class="vh-100 gradient-custom">
+    <div class="container py-5 h-100">
+        <div class="row justify-content-center align-items-center h-100">
+            <div class="col-12 col-lg-9 col-xl-7">
+                <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+                    <div class="card-body p-4 p-md-5">
+                        <h1 class="mb-4 pb-2 pb-md-0 mb-md-5"> <b>LOGIN </b> </h1>
+                        <form [formGroup]="LoginForm" (ngSubmit)="loggedin()">
+                            <div class="row">
+                                <div class="form-outline">
+                                    <label class="form-label" for="Email">Email :</label> &nbsp; &nbsp;
+                                    <input type="text" class="form-control form-control-lg" formControlName="email" />
+                                </div>
+                                <span class="text-danger" *ngIf="getEmail.invalid && getEmail.touched ">Valid Email Is
+                                    Required, </span>
+                                <span class="text-danger" *ngIf="getEmail.invalid && getEmail.dirty ">This Email Is
+                                    Invalid</span>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="form-outline">
+                                    <label class="form-label" for="Password">Password :</label> &nbsp; 
+                                    <input type="password" formControlName="password"
+                                        class="form-control1 form-control-lg" />
+                                </div>
+                                <span class="text-danger" *ngIf="getPassword.invalid && getPassword.touched ">Password
+                                    Is Required </span>
+                            </div>
+                            <br>
+                           
+                            <div class="mt-4 pt-2">
+                                <button class="btn btn-primary btn-lg" type="submit"
+                                    [disabled]="!LoginForm.valid">Login </button>
+                                 <button>{{ authService.isLoggedIn | async ? 'Logout' : 'Login' }}</button>
+                             </div>
+                            <br>
+                            <div>Not Registered :
+                                <a class="register" routerLink="/auth/register">Register</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>zz
+            </div>
+        </div>
+    </div>
+</section>
+                    
+ -->
+ 

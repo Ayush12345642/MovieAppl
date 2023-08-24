@@ -1,0 +1,54 @@
+.gradient-custom {
+  /* fallback for old browsers */
+   /* background:#93fbad;  */
+   background-color: black;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  /* background: -webkit-linear-gradient(to bottom right, rgb(155, 9, 9), rgb(8, 142, 19)); */
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* background: linear-gradient(to bottom right, rgb(207, 148, 22), rgb(157, 168, 114)) */
+}
+
+/* .card-registration .select-input.form-control[readonly]:not([disabled]) {
+  font-size: 1rem;
+  line-height: 2.15;
+  padding-left: .75em;
+  padding-right: .75em;
+} */
+.card-registration .select-arrow {
+  top: 13px;
+}
+span{color: red;}
+form{
+ color: rgb(238, 232, 232);
+}
+h3{
+ color: rgb(252, 245, 245);
+}
+.form-control{
+  margin-left: 25px;
+}
+.form-control1{
+  margin-left: 4px;
+}
+a{
+  text-decoration: none;
+  color:red
+}
+.register{
+  margin-left: 5px;
+}
+/* mat-grid-list{
+  background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fpngtree.com%2Fso%2Fboy-computer&psig=AOvVaw2yjUyUw1e8Yqb_N8GaYDd4&ust=1681248013935000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCNDS2YSfoP4CFQAAAAAdAAAAABAE);
+} */
+  #login{
+    border-radius: 10px;
+  }
+  .example{
+    max-width: 400px;
+    margin-left: 400px;
+    margin-top: 80px;
+    opacity:0.921;
+   
+  }

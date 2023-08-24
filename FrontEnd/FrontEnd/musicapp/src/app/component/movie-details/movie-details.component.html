@@ -1,0 +1,48 @@
+<mat-grid-list cols="2" rowHeight="2:1">
+    <mat-grid-tile>
+        <div class="image-container">
+            <img id="poster" src="https://image.tmdb.org/t/p/original/{{ getMovieDetailResult.backdrop_path }}" alt="">
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <div class="title-container">
+            <h1>{{ getMovieDetailResult.original_title }}</h1>
+            <h3>{{ getMovieDetailResult.overview }}</h3>
+            <div id="buttons">
+                <a mat-raised-button color="accent" class="actions" href="https://www.themoviedb.org/video/play?key={{getMovieVideoResult}}" target="_blank">Watch Now</a>
+                <a mat-button matTooltip="Add to Favorite" (click)="addToFavourite( getMovieDetailResult)">
+                    <mat-icon>favorite</mat-icon>
+                </a>
+                <a routerLink="/dashboard/recommended" (click)="passRecommended( getMovieDetailResult.original_title)" mat-button matTooltip="View Recommended Movies">
+                    <mat-icon>recommend</mat-icon>
+                </a>
+            </div>
+        </div>
+    </mat-grid-tile>
+</mat-grid-list>
+<mat-grid-list cols="2" rowHeight="6:7">
+    <mat-grid-tile>
+        <div class="cast-grid">
+            <h1>Cast</h1>
+            <div class="cast-container">
+                <div *ngFor="let c of getMovieCastResult">
+                    <div *ngIf="c.profile_path" class="cast">
+                        <img class="cast-image" src="https://image.tmdb.org/t/p/original/{{ c.profile_path }}" alt="">
+                        <h3 class="cast-name">{{ c.original_name }}</h3>
+                        <h3 class="cast-name">{{ c.character }}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <div>
+            <!-- <div><h1>Watch Next</h1></div> -->
+            <div class="card-container">
+                <mat-card class="example-card" *ngFor="let r of getRecommendationResult">
+                    <img mat-card-image class="rowing poster" (click)="updateList(r.id)" [routerLink]="['/movie-details', r.id]" src="https://image.tmdb.org/t/p/original/{{r.poster_path}}" alt="">
+                </mat-card>
+            </div>
+        </div>
+    </mat-grid-tile>
+</mat-grid-list>

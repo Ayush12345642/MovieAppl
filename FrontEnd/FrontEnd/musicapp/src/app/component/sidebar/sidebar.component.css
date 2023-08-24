@@ -1,0 +1,39 @@
+.sidenav-container {
+    height: 100%;
+   
+    
+  }
+  
+  .sidenav {
+    width: 200px;
+   
+  }
+/* 
+  .material-icons
+  {
+    color: blue;
+  } */
+  .c{
+    /* background-color:black; */
+    background-image: url(https://e0.pxfuel.com/wallpapers/475/972/desktop-wallpaper-get-the-latest-movies-data-src-kodi-tv-shows-teahub-io.jpg);
+  }
+  
+  .sidenav .mat-toolbar {
+    background: inherit;
+  }
+  
+  .mat-toolbar.mat-primary {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .onSelect:focus{
+    background-color: black;
+    color: black;
+  }
+  
+  .is-active {
+    background-color: black;
+    color: black;
+  }
